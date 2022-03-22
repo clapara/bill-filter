@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Anti trans lawsuits</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Your styles should be called here -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+</head>
+
+<body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+        <h1>Database: Lawsuits against anti-trans bills</h1>
+
+        <p>by Cailley LaPara</p>
+
+        <div>
+            <p>Over the past two years, numerous states have introduced or enacted bills targeting trans people, restricting their access to things from healthcare to school sports. In response, civil rights organizations are fighting anti-trans legislation in court. </p>
+
+            <p>This database attempts to keep track of those legal battles. While it is not yet complete, users can search for lawsuits by state and status. </p>
+                
+            <p>The hope is that this database would help advocates keep up with the uphill battle for trans rights being fought across the country.</p>
+        </div>
+
+        <div class="options">
+            <select id="states" class="filter">
+                    <option value="item">Filter by state...</option> <!--item is something all of these have in common-->
+                    <option value="florida">Florida</option>
+                    <option value="idaho">Idaho</option>
+                    <option value="tennessee">Tennessee</option>
+                    <option value="texas">Texas</option>
+                    <option value="westvirginia">West Virginia</option>
+                </select>
+
+            <select id="statuses" class="filter">
+                    <option value="item">Filter by status...</option> <!--item is something all of these have in common-->
+                    <option value="filed">Filed</option>
+                    <option value="stayed">Stayed</option>
+                    <option value="tempinj">Temporary Injunction Granted</option>
+                    <option value="appeal">Appeal Pending</option>
+                </select>
+        </div>
+
+        <section id="lawsuits">
+
+                <div class="item tennessee stayed active">
+                    <h3>A.S. v Lee</h3>
+                    <p>Filed Aug. 2, 2021</p>
+                    <p>Case No. 3:21-cv-00600</p>
+                    <p><a href="https://www.courtlistener.com/docket/60105495/as-v-lee/">Updates</a></p>
+                </div>
+
+                <div class="item texas tempinj active">
+                    <h3>Doe v Abbott</h3>
+                    <p>Filed March 1, 2022</p>
+                    <p>Case No. D-1-GN-22-000977</p>
+                    <p> <a href="https://www.aclu.org/cases/doe-v-abbott">ACLU info</a> </p>
+                </div>
+
+                <div class="item tennessee filed active">
+                    <h3>L.E. v Lee</h3>
+                    <p>Filed Nov. 4, 2021</p>
+                    <p>Case No. 3:21-cv-00835</p>
+                    <p> <a href="https://www.aclu.org/cases/le-v-lee">ACLU Info</a> </p>
+                </div>
+
+                <div class="item idaho filed active">
+                    <h3>Hecox v Little</h3>
+                    <p>Filed Apr. 15, 2020</p>
+                    <p>Case No. 1:20-cv-00184-CWD</p>
+                    <p> <a href="https://www.aclu.org/cases/hecox-v-little"> ACLU Info</a>  </p>
+                </div>
+
+                <div class="item westvirginia filed active">
+                    <h3>B.P.J. v West Virginia</h3>
+                    <p>Filed May 26, 2021</p>
+                    <p> Case No. 2:21-cv-00316</p>
+                    <p> <a href="https://www.aclu.org/cases/bpj-v-west-virginia-state-board-education">ACLU Info</a></p>
+                </div>
+
+                <div class="item florida appeal active">
+                    <h3>Adams v School Board of St. John's County, FL</h3>
+                    <p>Filed June 2017, Court Ruled in favor of Adams Aug. 2020, School board appealed June 2021</p>
+                    <p> Case No. No. 18-13592</p>
+                    <p> <a href="https://www.aclu.org/cases/bpj-v-west-virginia-state-board-education">ACLU Info</a></p>
+                </div>
+            
+                <div id="sources">
+                    <p>Sources: <a href="https://freedomforallamericans.org/litigation-tracker/">Freedom for All Americans,</a> <a href="https://www.aclu.org/legislation-affecting-lgbtq-rights-across-country">American Civil Liberties Union</a></p>
+                </div>
+        
+        </section>
+    </div>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+</body>
+
+</html>
